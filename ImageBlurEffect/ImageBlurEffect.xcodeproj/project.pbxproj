@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E164095A50CE1B7E875CF94 /* libPods-ImageBlurEffect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58BD2EB88DE86EF386D5165C /* libPods-ImageBlurEffect.a */; };
+		EBFD50A01EADE03500D33CE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFD509F1EADE03500D33CE4 /* main.m */; };
+		EBFD50A31EADE03500D33CE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFD50A21EADE03500D33CE4 /* AppDelegate.m */; };
+		EBFD50A61EADE03500D33CE4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFD50A51EADE03500D33CE4 /* ViewController.m */; };
+		EBFD50A91EADE03500D33CE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFD50A71EADE03500D33CE4 /* Main.storyboard */; };
+		EBFD50AB1EADE03500D33CE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBFD50AA1EADE03500D33CE4 /* Assets.xcassets */; };
+		EBFD50AE1EADE03500D33CE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBFD50AC1EADE03500D33CE4 /* LaunchScreen.storyboard */; };
+		EBFD50D41EADF68900D33CE4 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = EBFD50D31EADF68900D33CE4 /* UIImage+ImageEffects.m */; };
+		EBFD50D61EADF77B00D33CE4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFD50D51EADF77B00D33CE4 /* CoreImage.framework */; };
+		EBFD50DA1EADF7A000D33CE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBFD50D91EADF7A000D33CE4 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBFD50B51EADE03500D33CE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBFD50931EADE03500D33CE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBFD509A1EADE03500D33CE4;
+			remoteInfo = ImageBlurEffect;
+		};
+		EBFD50C01EADE03500D33CE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBFD50931EADE03500D33CE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBFD509A1EADE03500D33CE4;
+			remoteInfo = ImageBlurEffect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22E99769EF2CFF2BC9193D1C /* Pods-ImageBlurEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageBlurEffect.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImageBlurEffect/Pods-ImageBlurEffect.release.xcconfig"; sourceTree = "<group>"; };
+		2B90061146496309FAF5467F /* Pods-ImageBlurEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageBlurEffect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImageBlurEffect/Pods-ImageBlurEffect.debug.xcconfig"; sourceTree = "<group>"; };
+		58BD2EB88DE86EF386D5165C /* libPods-ImageBlurEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageBlurEffect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFD509B1EADE03500D33CE4 /* ImageBlurEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageBlurEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFD509F1EADE03500D33CE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EBFD50A11EADE03500D33CE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EBFD50A21EADE03500D33CE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EBFD50A41EADE03500D33CE4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EBFD50A51EADE03500D33CE4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EBFD50A81EADE03500D33CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBFD50AA1EADE03500D33CE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBFD50AD1EADE03500D33CE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBFD50AF1EADE03500D33CE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBFD50B41EADE03500D33CE4 /* ImageBlurEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageBlurEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFD50BF1EADE03500D33CE4 /* ImageBlurEffectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageBlurEffectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBFD50D21EADF68900D33CE4 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		EBFD50D31EADF68900D33CE4 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		EBFD50D51EADF77B00D33CE4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		EBFD50D91EADF7A000D33CE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBFD50981EADE03500D33CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFD50DA1EADF7A000D33CE4 /* Foundation.framework in Frameworks */,
+				EBFD50D61EADF77B00D33CE4 /* CoreImage.framework in Frameworks */,
+				3E164095A50CE1B7E875CF94 /* libPods-ImageBlurEffect.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFD50B11EADE03500D33CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFD50BC1EADE03500D33CE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		598DE549B273855C532F7CFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD50D91EADF7A000D33CE4 /* Foundation.framework */,
+				EBFD50D51EADF77B00D33CE4 /* CoreImage.framework */,
+				58BD2EB88DE86EF386D5165C /* libPods-ImageBlurEffect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B447E674C8E2AD1B67E0F9E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B90061146496309FAF5467F /* Pods-ImageBlurEffect.debug.xcconfig */,
+				22E99769EF2CFF2BC9193D1C /* Pods-ImageBlurEffect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBFD50921EADE03500D33CE4 = {
+			isa = PBXGroup;
+			children = (
+				EBFD509D1EADE03500D33CE4 /* ImageBlurEffect */,
+				EBFD509C1EADE03500D33CE4 /* Products */,
+				B447E674C8E2AD1B67E0F9E4 /* Pods */,
+				598DE549B273855C532F7CFF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EBFD509C1EADE03500D33CE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD509B1EADE03500D33CE4 /* ImageBlurEffect.app */,
+				EBFD50B41EADE03500D33CE4 /* ImageBlurEffectTests.xctest */,
+				EBFD50BF1EADE03500D33CE4 /* ImageBlurEffectUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBFD509D1EADE03500D33CE4 /* ImageBlurEffect */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD50A11EADE03500D33CE4 /* AppDelegate.h */,
+				EBFD50A21EADE03500D33CE4 /* AppDelegate.m */,
+				EBFD50A41EADE03500D33CE4 /* ViewController.h */,
+				EBFD50A51EADE03500D33CE4 /* ViewController.m */,
+				EBFD50A71EADE03500D33CE4 /* Main.storyboard */,
+				EBFD50D11EADF68900D33CE4 /* UIImage+ImageEffects */,
+				EBFD50AA1EADE03500D33CE4 /* Assets.xcassets */,
+				EBFD50AC1EADE03500D33CE4 /* LaunchScreen.storyboard */,
+				EBFD50AF1EADE03500D33CE4 /* Info.plist */,
+				EBFD509E1EADE03500D33CE4 /* Supporting Files */,
+			);
+			path = ImageBlurEffect;
+			sourceTree = "<group>";
+		};
+		EBFD509E1EADE03500D33CE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD509F1EADE03500D33CE4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EBFD50D11EADF68900D33CE4 /* UIImage+ImageEffects */ = {
+			isa = PBXGroup;
+			children = (
+				EBFD50D21EADF68900D33CE4 /* UIImage+ImageEffects.h */,
+				EBFD50D31EADF68900D33CE4 /* UIImage+ImageEffects.m */,
+			);
+			path = "UIImage+ImageEffects";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBFD509A1EADE03500D33CE4 /* ImageBlurEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFD50C81EADE03500D33CE4 /* Build configuration list for PBXNativeTarget "ImageBlurEffect" */;
+			buildPhases = (
+				C9F0BAA9BF17BD4F93470376 /* [CP] Check Pods Manifest.lock */,
+				EBFD50971EADE03500D33CE4 /* Sources */,
+				EBFD50981EADE03500D33CE4 /* Frameworks */,
+				EBFD50991EADE03500D33CE4 /* Resources */,
+				8E0A5F5E991B97AD21FBA6F0 /* [CP] Embed Pods Frameworks */,
+				CA192DCE900AE3C35802D64F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageBlurEffect;
+			productName = ImageBlurEffect;
+			productReference = EBFD509B1EADE03500D33CE4 /* ImageBlurEffect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBFD50B31EADE03500D33CE4 /* ImageBlurEffectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFD50CB1EADE03500D33CE4 /* Build configuration list for PBXNativeTarget "ImageBlurEffectTests" */;
+			buildPhases = (
+				EBFD50B01EADE03500D33CE4 /* Sources */,
+				EBFD50B11EADE03500D33CE4 /* Frameworks */,
+				EBFD50B21EADE03500D33CE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBFD50B61EADE03500D33CE4 /* PBXTargetDependency */,
+			);
+			name = ImageBlurEffectTests;
+			productName = ImageBlurEffectTests;
+			productReference = EBFD50B41EADE03500D33CE4 /* ImageBlurEffectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBFD50BE1EADE03500D33CE4 /* ImageBlurEffectUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBFD50CE1EADE03500D33CE4 /* Build configuration list for PBXNativeTarget "ImageBlurEffectUITests" */;
+			buildPhases = (
+				EBFD50BB1EADE03500D33CE4 /* Sources */,
+				EBFD50BC1EADE03500D33CE4 /* Frameworks */,
+				EBFD50BD1EADE03500D33CE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBFD50C11EADE03500D33CE4 /* PBXTargetDependency */,
+			);
+			name = ImageBlurEffectUITests;
+			productName = ImageBlurEffectUITests;
+			productReference = EBFD50BF1EADE03500D33CE4 /* ImageBlurEffectUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBFD50931EADE03500D33CE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "刘林飞";
+				TargetAttributes = {
+					EBFD509A1EADE03500D33CE4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZVS8VB9948;
+						ProvisioningStyle = Automatic;
+					};
+					EBFD50B31EADE03500D33CE4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZVS8VB9948;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBFD509A1EADE03500D33CE4;
+					};
+					EBFD50BE1EADE03500D33CE4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZVS8VB9948;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EBFD509A1EADE03500D33CE4;
+					};
+				};
+			};
+			buildConfigurationList = EBFD50961EADE03500D33CE4 /* Build configuration list for PBXProject "ImageBlurEffect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBFD50921EADE03500D33CE4;
+			productRefGroup = EBFD509C1EADE03500D33CE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBFD509A1EADE03500D33CE4 /* ImageBlurEffect */,
+				EBFD50B31EADE03500D33CE4 /* ImageBlurEffectTests */,
+				EBFD50BE1EADE03500D33CE4 /* ImageBlurEffectUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBFD50991EADE03500D33CE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFD50AE1EADE03500D33CE4 /* LaunchScreen.storyboard in Resources */,
+				EBFD50AB1EADE03500D33CE4 /* Assets.xcassets in Resources */,
+				EBFD50A91EADE03500D33CE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFD50B21EADE03500D33CE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFD50BD1EADE03500D33CE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8E0A5F5E991B97AD21FBA6F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageBlurEffect/Pods-ImageBlurEffect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9F0BAA9BF17BD4F93470376 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA192DCE900AE3C35802D64F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ImageBlurEffect/Pods-ImageBlurEffect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBFD50971EADE03500D33CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBFD50D41EADF68900D33CE4 /* UIImage+ImageEffects.m in Sources */,
+				EBFD50A61EADE03500D33CE4 /* ViewController.m in Sources */,
+				EBFD50A31EADE03500D33CE4 /* AppDelegate.m in Sources */,
+				EBFD50A01EADE03500D33CE4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFD50B01EADE03500D33CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBFD50BB1EADE03500D33CE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBFD50B61EADE03500D33CE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBFD509A1EADE03500D33CE4 /* ImageBlurEffect */;
+			targetProxy = EBFD50B51EADE03500D33CE4 /* PBXContainerItemProxy */;
+		};
+		EBFD50C11EADE03500D33CE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBFD509A1EADE03500D33CE4 /* ImageBlurEffect */;
+			targetProxy = EBFD50C01EADE03500D33CE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBFD50A71EADE03500D33CE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBFD50A81EADE03500D33CE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBFD50AC1EADE03500D33CE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBFD50AD1EADE03500D33CE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBFD50C61EADE03500D33CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EBFD50C71EADE03500D33CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBFD50C91EADE03500D33CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B90061146496309FAF5467F /* Pods-ImageBlurEffect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVS8VB9948;
+				INFOPLIST_FILE = ImageBlurEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmdj.XMDJ.ImageBlurEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EBFD50CA1EADE03500D33CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22E99769EF2CFF2BC9193D1C /* Pods-ImageBlurEffect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZVS8VB9948;
+				INFOPLIST_FILE = ImageBlurEffect/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmdj.XMDJ.ImageBlurEffect;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EBFD50CC1EADE03500D33CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZVS8VB9948;
+				INFOPLIST_FILE = ImageBlurEffectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmdj.XMDJ.ImageBlurEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageBlurEffect.app/ImageBlurEffect";
+			};
+			name = Debug;
+		};
+		EBFD50CD1EADE03500D33CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZVS8VB9948;
+				INFOPLIST_FILE = ImageBlurEffectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmdj.XMDJ.ImageBlurEffectTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageBlurEffect.app/ImageBlurEffect";
+			};
+			name = Release;
+		};
+		EBFD50CF1EADE03500D33CE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZVS8VB9948;
+				INFOPLIST_FILE = ImageBlurEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmdj.XMDJ.ImageBlurEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ImageBlurEffect;
+			};
+			name = Debug;
+		};
+		EBFD50D01EADE03500D33CE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZVS8VB9948;
+				INFOPLIST_FILE = ImageBlurEffectUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xmdj.XMDJ.ImageBlurEffectUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ImageBlurEffect;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBFD50961EADE03500D33CE4 /* Build configuration list for PBXProject "ImageBlurEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFD50C61EADE03500D33CE4 /* Debug */,
+				EBFD50C71EADE03500D33CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFD50C81EADE03500D33CE4 /* Build configuration list for PBXNativeTarget "ImageBlurEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFD50C91EADE03500D33CE4 /* Debug */,
+				EBFD50CA1EADE03500D33CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFD50CB1EADE03500D33CE4 /* Build configuration list for PBXNativeTarget "ImageBlurEffectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFD50CC1EADE03500D33CE4 /* Debug */,
+				EBFD50CD1EADE03500D33CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBFD50CE1EADE03500D33CE4 /* Build configuration list for PBXNativeTarget "ImageBlurEffectUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBFD50CF1EADE03500D33CE4 /* Debug */,
+				EBFD50D01EADE03500D33CE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBFD50931EADE03500D33CE4 /* Project object */;
+}
